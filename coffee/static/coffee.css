@@ -1,0 +1,83 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+	margin: 5px;
+}
+
+.haha {
+	background-color: red;
+}
+
+.listcoffee {
+	justify-content: center;
+	text-transform: uppercase;
+}
+
+.header-img {
+	position: relative;
+	background-image: url(../static/IMG/coffee_small.jpg);
+	background-size: cover;
+	height: 350px;
+	background-position: 0 50%;
+	position: sticky;
+	z-index: 20;
+}
+
+div .photocoffee {
+	border-radius: 25px;
+	width: 200px;
+	height: 240px;
+}
+
+.header-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 40px;
+	color: white;
+	font-weight: bold;
+}
+
+@media (max-width: 576px) {
+	.header-text {
+		font-size: 20px;
+	}
+	div .container {
+		width: 200px;
+	}
+}
+
+@media (max-width: 768px) {
+	.header-text {
+		font-size: 32px;
+	}
+}
+@media (min-width: 1200px) {
+	.header-img {
+		background-image: url(../static/IMG/coffee_big.jpg);
+	}
+}
+
+@media (max-width: 320px) {
+	.header-text {
+		font-size: 20px;
+	}
+	div .card-body {
+		width: 200px;
+	}
+}
